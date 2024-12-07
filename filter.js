@@ -6,18 +6,21 @@ function isOdd(x) {
 const output = arr.filter(isOdd);
 console.log(output);
 
-// function binary(x) {
-//   return x.toString(2);
-// }
 
-// const bOut = arr.filter(binary);
-// console.log(bOut);
+const users=[
+    {uname : "ak",age : 22},
+    {uname : "elo", age : 24},
+    {uname : "aksh",age : 32},
+    {uname : "das", age : 24},
+    {uname : "jio",age : 22},
+    {uname : "sdao", age : 35},
+    {uname : "airtel",age : 22},
+];
 
-// const out1 = arr.filter(function binary(x) {
-//   return x.toString(2);
-// });
-// console.log(bOut);
-// console.log(out1);
+const out= users.filter(x => x.age<30);
+console.log(out);
 
-// const output2 = arr.filter((x) => x.toString(2)); //filterping each value(x) to string convert to binary
-// console.log(output2);
+const outMap= users.filter((x) => x.age<30).map((x)=>x.uname);
+console.log(outMap);
+
+const outRed = users.reduce
